@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustentabilidade</title>
+
+    <!------------------bootstrap------------------------------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!------------------bootstrap------------------------------------>
+
+    <!------------------icons--------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!------------------icons--------------------------------------------->
+
+    <!-------------------CSS---------------------------------------------->
+    <link rel="stylesheet" href="css/style.css">
+    <!-------------------CSS---------------------------------------------->
+</head>
+<body>
+    <header class="header py-5">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                
+                <a class="btn btn-dark" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="bi bi-list"></i>
+                </a>
+                
+                <div class="collapse navbar-collapse"><ul class="list">
+                <li><div><a class="col-lg-1" id="HOME">HOME</a></div></li>
+                <li><div><a href="paginas/noticias.html">NOTICIAS</a></div></li>
+                <li><div><a href="paginas/CLIMA.html">CLIMA</a></div></li>
+                <li><div><a href="paginas/PRODUTOS.html">PRODUTOS</a></div></li>
+                <li><div><a href="paginas/membros.html">MEMBROS</a></div></li>
+                <li><div><a href="paginas/ENERGIA.html">ENERGIA</a></div></li>
+                <li><div><a href="paginas/saibamais.html">SAIBA-MAIS</a></div></li>
+                </ul></div>
+                
+                <button class="btn btn-outline-dark col-lg-1 bg-black text-white" type="button" data-bs-toggle="modal" data-bs-target= "#exampleModal">JUNTE-SE</button>
+
+            </nav>
+            <section class="secao1header">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="imgs/index/PNG_folha de guarqa.png" alt="" height="200px" style="border-radius: 50%; padding: 20px; margin: 20px">
+                        </div>
+
+                        <div class="col-lg-4">
+                        </div>
+
+                    
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+
+<!------main------------------------------------------>
+    <main>
+<!---------------seção-------------------------------->
+
+    <!--Secao 1 que recebe 2 textos-->
+        <section class="nossamissao" id="secao1">
+        </section>
+    <!--secao 1 fim-->
+    
+    <!--Secao noticias inicio-->
+        <section class="secao2" id="secao2" >
+        </section>
+<!---------------seção-noticias fim------------------------------->
+
+<!---------------seção-acordion inicio-------------------------------->
+
+        <section class="secaoperguntas container my-5" id="secao_acordion">
+        </section>
+    <!--Secao acordion fim-->
+
+
+        <section class="sobrenos" style="background-color: #96CEB4; padding: 50px; height: 69vh;" id="sobrenos">
+        </section>
+
+        <section class="juntese" style="height: 50vh;" id="juntese">
+        </section>
+<!---------------seção-------------------------------->
+
+
+
+    </main>
+<!------main fim------------------------------------>
+
+
+<!-----------footer inicio------------------------>
+    <footer class="footer">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="imgs/index/PNG_folha de guarqa.png" alt="" height="200px" style="border-radius: 50%; padding: 20px; margin: 20px">
+                </div>
+
+                <div class="col-md-4">
+                    <i class="bi bi-instagram fs-3"></i>
+                    <i class="bi bi-youtube fs-3"></i>
+                    <i class="bi bi-twitter-x fs-3"></i>
+                    <i class="bi bi-xbox fs-3"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-----------footer fim------------------------>
+
+
+
+<!-- Modal com formulario começo-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+          <!--Formulario de inscrição começo-->
+    <div class="mb-1">
+    <label for="">Nome do candidato</label>
+    <br>
+    <input type="text" id="input_nome"></div>
+    
+    <br>
+
+    <div class="mb-1">
+    <label for="">Idade:</label>
+    <br>
+    <input type="number" id="input_idade">
+    </div>
+
+    <br>
+
+    <div class="mb-1">
+    <label for="">Telefone:</label>
+    <br>
+    <input type="tel" name="" id="input_telefone">
+    </div>
+
+    <br>
+
+    <div class="mb-1">
+    <label for="">Endereço:</label>
+    <br>
+    <input type="text" id="input_endereço">
+    </div>
+
+    <br>
+
+    <div class="mb-1">
+    <label for="">Email:</label>
+    <br>
+    <input type="email" id="input_email">
+    </div>
+
+    <div id="rslt"></div>
+    <!--Formulario de inscrição fim-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary" id="modal_button_enviar">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal com formulario fim-->
+
+<!-----------------------------------------OFFCANVAS----------------------------------------------------------------------------------------------->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header" style="background-color: #96CEB4";>
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">SUA CONTA</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            <i class="bi bi-person-circle"></i>
+        </div>
+        
+        <div>
+            <h2 style="font-size: 10px;">VOCÊ AINDA NÃO POSSUI UMA CONTA</h2>
+
+            <button class="btn btn-outline-dark" type="button" data-bs-toggle="modal" data-bs-target= "#exampleModal">Inscreva-se</button>
+        </div>
+    </div>
+    </div>
+
+
+<!-----------------------------------------OFFCANVAS----------------------------------------------------------------------------------------------->
+
+
+<!--link database-->
+<script src="database/dados.js"></script>
+
+<!--link javascrit-->
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!-----------------------------------------SCRIPT------------------------------------------------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+    <script src="database/dados.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
