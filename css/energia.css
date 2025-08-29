@@ -1,0 +1,67 @@
+.navbar{
+    display: flex;
+    padding: 5px 100px;
+    margin: 0px px auto;
+    backdrop-filter: blur(30px);
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: first baseline;
+}
+.logo{
+    width: 100px;
+    border-radius: 60%;
+}
+.list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+    list-style: none;
+}
+.list li{
+    margin-right: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.list li a{
+    color: rgb(0, 0, 0);
+    text-decoration: double;
+    transition: 0.5s;
+    padding: 2px 5px;
+}
+.list li a:hover{
+    background-color: #96CEB4;
+    border-radius: 15%;
+    transition: 0.5s;
+}
+
+
+
+
+
+/*footer*/
+.footer{
+    height: 60dvh auto;
+    background-color: rgb(54, 54, 54);
+}
+
+.carousel1{
+    background-color: #FFAD60;
+    height: 80dvh auto;
+    border-radius: 30px 30px 30px 30px;
+    margin: 40px 70px;
+}
+
+.ok {
+border: 2px solid #96CEB4;
+}
+
+.erro {
+border: 2px solid #A02334;
+}
+
+.bi-person-circle{
+    font-size: 90px;
+}
